@@ -7,4 +7,4 @@ def obtener_datos(datos_feos):
 	return datos_bonitos
 
 if __name__=='__main__':
-	obtener_datos('valdivia.csv')
+	obtener_datos(datos_feos) 
