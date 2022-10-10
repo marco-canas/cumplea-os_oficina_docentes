@@ -22,4 +22,4 @@ def obtener_datos(datos_csv):
 
 
 if __name__=='__main__':
-    obtener_datos(datos_csv)
+    pass 
