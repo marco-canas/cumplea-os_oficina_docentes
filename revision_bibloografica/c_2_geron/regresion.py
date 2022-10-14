@@ -4,10 +4,11 @@
 
 def obtener_datos(datos_url):
     '''
-    # documentación de esta función 
+    INPUT: Le entra la url de ubicación de los datos
+    OUTPUT: el dataframe de los datos
     '''
     import pandas as pd
-    return pd.read_csv(datos_url)
+    return pd.read_csv(datos_url) 
 
 
 
