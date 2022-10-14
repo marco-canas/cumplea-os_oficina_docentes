@@ -10,7 +10,11 @@ def obtener_datos(datos_url):
     import pandas as pd
     return pd.read_csv(datos_url) 
 
-
+def visualizarMatrizHistogramas(dataframe):
+    import matplotlib.pyplot as plt
+    dataframe.hist(bins=50, figsize=(20,15))
+    plt.show()
+    return 
 
 if __name__=='__main__':
     pass 
