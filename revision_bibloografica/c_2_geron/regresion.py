@@ -16,5 +16,18 @@ def visualizarMatrizHistogramas(dataframe):
     plt.show()
     return 
 
+def dividirEntrenamientoTesteo(dataframe):
+    '''
+    INPUT: 
+    datframe en la forma [X|y]
+    OUTPUT:
+    arreglos de numpy X_train, X_test, y_train, y_test
+    '''
+    X = dataframe.drop(['precio'], axis = 1).values
+    y = dataframe.precio.values
+    from sklearn.model_selection import train_test_split
+    X_trian, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, stratify=None )
+    return  X_trian, X_test, y_train, y_test     
+
 if __name__=='__main__':
     pass 
