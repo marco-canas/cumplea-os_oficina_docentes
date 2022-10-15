@@ -30,5 +30,9 @@ def dividir_entrenamiento_testeo(dataframe):
     X_trian, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, stratify=None, random_state=42 )
     return  X_trian, X_test, y_train, y_test     
 
+
+
+
+
 if __name__=='__main__':
     pass 
