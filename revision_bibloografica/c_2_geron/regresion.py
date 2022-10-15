@@ -11,18 +11,19 @@ def obtener_datos(datos_url):
     return pd.read_csv(datos_url) 
 
 def visualizarMatrizHistogramas(dataframe):
-    import matplotlib.pyplot as plt
-    dataframe.hist(bins=50, figsize=(20,15))
-    plt.show()
-    return 
+    import pandas as pd 
+    return dataframe.hist(bins=50, figsize=(20,15))
+    
+     
 
-def dividirEntrenamientoTesteo(dataframe):
+def dividir_entrenamiento_testeo(dataframe):
     '''
     INPUT: 
     datframe en la forma [X|y]
     OUTPUT:
     arreglos de numpy X_train, X_test, y_train, y_test
     '''
+    import pandas as pd 
     X = dataframe.drop(['precio'], axis = 1).values
     y = dataframe.precio.values
     from sklearn.model_selection import train_test_split
