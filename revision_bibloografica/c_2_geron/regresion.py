@@ -8,6 +8,7 @@ def obtener_datos(datos_url):
     OUTPUT: el dataframe de los datos
     '''
     import pandas as pd
+    import numpy as np 
     return pd.read_csv(datos_url) 
 
 def visualizarMatrizHistogramas(dataframe):
@@ -29,6 +30,13 @@ def dividir_entrenamiento_testeo(dataframe):
     from sklearn.model_selection import train_test_split
     X_trian, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, stratify=None, random_state=42 )
     return  X_trian, X_test, y_train, y_test     
+
+
+def codificar_variables_ordinales():
+    from sklearn.preprocessing import OrdinalEncoder
+    ordinal_encoder = OrdinalEncoder()
+    return ordinal_encoder.fit_transform(atributo_cat)
+
 
 
 
