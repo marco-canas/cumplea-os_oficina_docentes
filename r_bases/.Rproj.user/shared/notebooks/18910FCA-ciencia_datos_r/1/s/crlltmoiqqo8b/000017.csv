@@ -1,4 +1,0 @@
-"0","millas %>% "
-"0","ggplot(mapping = aes(x = cilindrada, y = autopista)) +"
-"0","  geom_point(mapping = aes(color = clase)) +"
-"0","  geom_smooth(data = filter(millas, clase == ""subcompacto""), se = FALSE)"

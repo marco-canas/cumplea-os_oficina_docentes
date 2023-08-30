@@ -1,4 +1,0 @@
-"0","millas %>% "
-"0","  ggplot() +"
-"0","  geom_point(mapping = aes(x=cilindrada, y= autopista)) +"
-"0","  facet_wrap(~clase, nrow = 3)"

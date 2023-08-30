@@ -1,4 +1,0 @@
-"0","millas %>% "
-"0","  ggplot(mapping = aes(x= cilindrada, y= autopista, color = traccion)) +"
-"0","  geom_point()+"
-"0","  geom_smooth(se = FALSE)"
