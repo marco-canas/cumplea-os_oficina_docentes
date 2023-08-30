@@ -1,0 +1,2 @@
+"0","ggplot(data = millas) +"
+"0","  geom_point(mapping = aes(x=autopista, y= cilindros))"
